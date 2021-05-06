@@ -19,6 +19,11 @@ def getMessage():
     data = {'message': 'Hello World!'}
     return jsonify(data)
 
+@app.route('/test', methods=['GET'])
+def getMessage():
+    data = {'message': 'Hello Test!'}
+    return jsonify(data)
+
 @app.route('/api/predict-fitness', methods = ['POST'])
 def predict_fitness():
     if not request.json or not 'userHeight' in request.json:
@@ -87,4 +92,4 @@ def predict_fitness():
 
     return jsonify( { 'fitInfo': fitData } ), 201
 
-app.run(debug=True)
+app.run(debug=False)
