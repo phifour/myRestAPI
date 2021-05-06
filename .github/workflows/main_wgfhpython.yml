@@ -59,4 +59,4 @@ jobs:
         with:
           app-name: 'wgfhpython'
           slot-name: 'production'
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_1e4165c17ade4ac8bd53f704b208e02c }}
+          publish-profile: ${{ secrets.AzureAppService_PublishProfile_ec217526eefd42f68462ccc7a30b2e97 }}
