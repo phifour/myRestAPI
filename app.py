@@ -13,7 +13,7 @@ def profile(username):
     return username
 
 
-@app.route('/qa', methods=['GET'])
+@app.route('/qa')
 def getMessage():
     summarizer = pipeline("summarization")
     ARTICLE = """
@@ -31,4 +31,6 @@ def getMessage():
 
     # print(summary[0]['summary_text'])
 
-    return summary[0]['summary_text']
+    return 'test1234'#summary[0]['summary_text']
+
+    
