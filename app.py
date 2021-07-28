@@ -10,7 +10,7 @@ def hello():
 
 @app.route('/user/<username>')
 def profile(username):
-    return username
+    return 'hello :' + username
 
 
 # @app.route('/qa')
