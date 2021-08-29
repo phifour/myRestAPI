@@ -1,16 +1,17 @@
-from flask import Flask
-#from transformers import pipeline
+from loan import *
 
+from flask import Flask
 app = Flask(__name__)
 
-@app.route("/test")
-def hello():
-    return "Hello, World!"
+@app.route("/loan/<n>/<r>")
+def loan(n,r):
+    return calc_cashflows(n,r)
 
 
-@app.route('/user/<username>')
-def profile(username):
-    return 'hello :' + username
+
+# @app.route('/user/<username>')
+# def profile(username):
+#     return 'hello :' + username
 
 
 # @app.route('/qa')
