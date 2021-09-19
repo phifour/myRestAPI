@@ -22,7 +22,7 @@ def calc_cashflows(f,n,r):
     interest_payments = []
     labels = []
     cashflow_table = []
-    facevalue = f
+    facevalue = float(f)
     r = float(r)
     n = int(n)
     r_new = r/100
