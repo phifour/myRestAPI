@@ -17,12 +17,12 @@ def annuity_redemption(S0, r, n, t):
     part2 = pow(1+r,n)-1
     return (part1/part2) *S0* pow(1+r,t-1)
   
-def calc_cashflows(n,r):    
+def calc_cashflows(f,n,r):    
     redemption_payments = []
     interest_payments = []
     labels = []
     cashflow_table = []
-    facevalue = 100
+    facevalue = f
     r = float(r)
     n = int(n)
     r_new = r/100
